@@ -1,3 +1,3 @@
 #Talks
 
-These are materials related to talks I gave.
+This is material related to my talks.
