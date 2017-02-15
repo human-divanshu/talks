@@ -1,27 +1,26 @@
 import cv2
-import copy
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture("people-walking.mp4")
+fgbg = cv2.BackgroundSubtractorMOG()
 
 winName1 = "Live feed"
-winName2 = "Grayscale"
+winName2 = "Motion detection"
 
 cv2.startWindowThread()
+
 cv2.namedWindow(winName1)
 cv2.namedWindow(winName2)
 
-ctr = 0
 while True:
-    ret, f1 = cap.read()
-    
-    f2
-    res = f2 - f1
+    ret, frame = cap.read()
+    fgmask = fgbg.apply(frame)
     
     cv2.imshow(winName1, frame)
-    cv2.imshow(winName2, gray)
-    ctr = ctr + 1
+    cv2.imshow(winName2, fgmask)
+    
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
 cap.release()
 cv2.destroyWindow(winName1)
+cv2.destroyWindow(winName2)

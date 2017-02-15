@@ -22,3 +22,4 @@ while True:
 
 cap.release()
 cv2.destroyWindow(winName1)
+cv2.destroyWindow(winName2)
