@@ -11,7 +11,7 @@ x, y, c = img.shape
 
 for i in range(0, x):
     for j in range(0, y):
-        if img[i,j][1] > 220:
+        if img[i,j][1] > 180:
             img[i,j] = bg[i,j]
 
 winName1 = "Obama on moon"

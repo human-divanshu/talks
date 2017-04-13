@@ -1,0 +1,15 @@
+HTML - https://www.w3schools.com/html/default.asp
+
+CSS	 - https://www.w3schools.com/css/default.asp
+
+Bootstrap - https://www.w3schools.com/bootstrap/default.asp
+
+JavaScript - https://www.w3schools.com/js/default.asp
+
+Jquery - https://www.w3schools.com/jquery/default.asp
+
+PHP - https://www.w3schools.com/php/default.asp
+
+SQL - https://www.w3schools.com/sql/default.asp
+
+Angular - https://www.w3schools.com/angular/default.asp

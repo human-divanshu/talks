@@ -1,6 +1,7 @@
 import cv2
 
 cap = cv2.VideoCapture("people-walking.mp4")
+
 fgbg = cv2.BackgroundSubtractorMOG()
 
 winName1 = "Live feed"

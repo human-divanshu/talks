@@ -1,12 +1,12 @@
 import cv2
 import numpy as np
 
-img = cv2.imread("obama.jpg")
+img = cv2.imread("pc.jpg")
 newimg = cv2.cvtColor(img, cv2.COLOR_BGR2YCR_CB)
 
 # skin filter
-lower = np.array([0,133,77], np.uint8)
-upper = np.array([255,173,127], np.uint8) 
+lower = np.array([120,120,100], np.uint8) # 0, 133, 77
+upper = np.array([250,200,255], np.uint8)  #255, 173, 127
 
 winName1 = "Original image"
 winName2 = "Filtered image"
