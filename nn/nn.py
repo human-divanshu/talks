@@ -31,6 +31,9 @@ w2 = numpy.random.rand(4, 1) + 1
 l2 = nonlin(numpy.dot(l1, w1))
 l3 = nonlin(numpy.dot(l2, w2))
 
+print "l3 is :"
+print l3
+
 # error calculation
 l3_errors = y - l3
 

@@ -28,7 +28,7 @@ w1 = numpy.random.rand(2, 4) + 1
 # w2 should be (input nodes) x (no of nodes in this layer) i.e 4 x 1
 w2 = numpy.random.rand(4, 1) + 1
 
-epochs = 60000
+epochs = 500
 
 # training
 for e in range(epochs):
